@@ -27,7 +27,17 @@
 
 </body>
 
+</html>
+<script>
+    var colors = ["red", "blue", "green", "yellow", "purple", "orange"];
+    var currentIndex = 0;
 
+    function changeColor() {
+        document.body.style.backgroundColor = colors[currentIndex];
+        currentIndex = (currentIndex + 1) % colors.length;
+    }
+
+    setInterval(changeColor, 1000); // تغيير اللون كل ثانية
 
 
 
